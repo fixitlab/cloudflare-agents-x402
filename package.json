@@ -1,0 +1,14 @@
+{
+  "name": "cloudflare-agents-x402",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "templates/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "typecheck": "npm run build --workspace packages/x402-stacks-agents && npm run typecheck --workspaces --if-present"
+  }
+}
